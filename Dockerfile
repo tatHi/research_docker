@@ -35,10 +35,9 @@ RUN pip3 install tqdm && \
     pip3 install mecab-python3
 
 # make workspace
-RUN mkdir work && cd work
+RUN mkdir work
+WORKDIR /work
 
 # my common package
 RUN git clone https://github.com/tathi/common && \
     python3 common/setup.py develop
-WORKDIR /work
-
