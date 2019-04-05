@@ -1,5 +1,9 @@
 FROM ubuntu
 
+# available Japanese
+RUN export LANG=C.UTF-8 && \
+    export LANGUAGE=en_US:
+
 RUN apt-get update
 
 # git
