@@ -1,8 +1,9 @@
 FROM ubuntu
 
 # available Japanese
-RUN export LANG=C.UTF-8 && \
-    export LANGUAGE=en_US:
+RUN echo export LANG=C.UTF-8 >> ~/.bashrc && \
+    echo export LANGUAGE=en_US: >> ~/.bashrc && \
+    source ~/.bashrc
 
 RUN apt-get update
 
