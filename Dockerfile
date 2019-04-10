@@ -3,6 +3,7 @@ FROM ubuntu
 # available Japanese
 RUN echo export LANG=C.UTF-8 >> ~/.bashrc && \
     echo export LANGUAGE=en_US: >> ~/.bashrc && \
+    echo alias python=python3 >> ~/.bashrc && \
     source ~/.bashrc
 
 RUN apt-get update
@@ -45,4 +46,4 @@ WORKDIR /work
 
 # my common package
 RUN git clone https://github.com/tathi/common && \
-    python3 common/setup.py develop
+    cd common && python3 setup.py develop
