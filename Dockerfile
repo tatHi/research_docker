@@ -1,6 +1,6 @@
 FROM ubuntu
 
-# available Japanese
+# enable Japanese
 RUN echo export LANG=C.UTF-8 >> ~/.bashrc && \
     echo export LANGUAGE=en_US: >> ~/.bashrc && \
     echo alias python=python3 >> ~/.bashrc && \
