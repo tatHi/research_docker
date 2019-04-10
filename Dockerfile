@@ -36,6 +36,7 @@ RUN pip3 install tqdm && \
     pip3 install sklearn && \
     pip3 install dill && \
     pip3 install pandas && \
+    pip3 install pyyaml && \
     pip3 install nltk && \
     apt-get -y install swig && \
     pip3 install mecab-python3
